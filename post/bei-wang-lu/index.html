@@ -1,0 +1,250 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>备忘录 | 建筑G</title>
+
+<link rel="shortcut icon" href="https://jianzhugo.github.io/favicon.ico?v=1673337085128">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://jianzhugo.github.io/styles/main.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"> -->
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/9.12.0/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/9.12.0/languages//dart.min.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script> -->
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+    
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="/">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            建筑G
+        </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="changeNavbar">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+            <div class="nav-item">
+                
+                <a href="/" class="menu gt-a-link">
+                    首页
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/archives" class="menu gt-a-link">
+                    归档
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/tags" class="menu gt-a-link">
+                    标签
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/post/about" class="menu gt-a-link">
+                    关于
+                </a>
+                
+            </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1673337085128"
+                action="/search/">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+<script>
+    /* 移动端导航栏展开/收起切换 */
+    document.getElementById('changeNavbar').onclick = () => {
+        var element = document.getElementById('navbarSupportedContent');
+        if (element.style.display === 'none' || element.style.display === '') {
+            element.style.display = 'block';
+        } else {
+            element.style.display = 'none';
+        }
+    }
+</script>
+
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    备忘录
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2022-11-07 ·
+                    </time>
+                    
+                </div>
+                <div class="post-content">
+                    <p>摘要：记录一些小东西，备忘</p>
+<!-- more -->
+<h2 id="索引">索引</h2>
+<ol>
+<li><strong><a href="#%E5%A6%82%E4%BD%95%E7%82%B8%E5%BC%80%E6%96%87%E4%BB%B6%E5%A4%B9">如何炸开文件夹</a></strong></li>
+<li><strong><a href="#%E5%88%A0%E9%99%A4%E9%A1%BD%E5%9B%BA%E6%96%87%E4%BB%B6">删除顽固文件</a></strong></li>
+<li><strong><a href="#win10%E5%92%8Cwin11%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E5%88%87%E6%8D%A2">Win10和Win11右键菜单切换</a></strong></li>
+<li><strong><a href="#kms%E6%BF%80%E6%B4%BBoffice%E5%91%BD%E4%BB%A4">KMS激活office命令</a></strong></li>
+<li><strong><a href="#listary-pro%E7%89%88%E6%BF%80%E6%B4%BB%E7%A0%81">Listary Pro版激活码</a></strong></li>
+</ol>
+<h2 id="如何炸开文件夹">如何炸开文件夹</h2>
+<pre><code>@echo off
+for /d %%a in (*) do (
+    xcopy &quot;%%a\*.*&quot; . /e
+    rd &quot;%%a&quot; /s /q
+)
+</code></pre>
+<p>复制上面的代码做成bat脚本，名称随意，放到需要炸开的文件夹内，在此文件夹内的文件夹都会炸开，只留下文件。<br>
+如A文件夹内有B\C\D文件夹，把些文件放到A文件夹中，运行后，BCD文件夹内的文件会到A文件夹下面，但BCD文件夹会删掉。</p>
+<hr>
+<h2 id="删除顽固文件">删除顽固文件</h2>
+<pre><code>DEL /F /A /Q \\?\%1
+RD /S /Q \\?\%1
+</code></pre>
+<p>复制上面代码做成bat脚本，名称随意。把需要删除的文件或文件夹拖到此bat脚本上即可。</p>
+<hr>
+<h2 id="win10和win11右键菜单切换">Win10和Win11右键菜单切换</h2>
+<p><strong>把下面代码制作成bat脚本，运行即可</strong></p>
+<ul>
+<li>切换成WIN10菜单</li>
+</ul>
+<pre><code>reg add &quot;HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32&quot; /f /ve
+taskkill /f /im explorer.exe &amp; start explorer.exe
+</code></pre>
+<ul>
+<li>切换成WIN11菜单</li>
+</ul>
+<pre><code>reg delete &quot;HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32&quot; /f /ve
+taskkill /f /im explorer.exe &amp; start explorer.exe
+</code></pre>
+<hr>
+<h2 id="kms激活office命令">KMS激活office命令</h2>
+<ul>
+<li>卸载激活：<code>slmgr.vbs /upk</code></li>
+<li>激活：<code>slmgr /skms one.kmspass.com &amp;&amp; slmgr /ato</code></li>
+</ul>
+<hr>
+<h2 id="listary-pro版激活码">Listary Pro版激活码</h2>
+<p>Name:         Mike Rountree<br>
+Email:         soft@instant-demo.com<br>
+<code>JE4V8T3M96PWT4SUCNZNVZ37XKLBU2QW</code><br>
+<code>N64LEJQ3VHY7MPL6KY2R5SQZ76QFFTKP</code><br>
+<code>VVE8JBVEAME8MMBRHRGF2P6MAJG7ZSQY</code><br>
+<code>MUY2PGTO2EG3W2YHTU2CFWL7SE6THU3Q</code><br>
+<code>TAL3U894S2BWA9629EFCXYYYG3S65WEQ</code><br>
+<code>5R234G26AT52UWD27PNENP4GR2EKKDK6</code></p>
+
+                </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://jianzhugo.github.io/post/cad-wen-ti-jie-jue-ban-fa/" class="post-title gt-a-link">
+                    CAD问题解决办法
+                </a>
+            </div>
+        
+
+        
+
+        
+
+        
+            <script src='https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
+
+<style>
+	div#vcomments{
+		width:100%;
+		max-width: 1000px;
+		padding: 2.5%
+	}
+</style>
+
+
+	<div id="vcomments"></div>
+
+<script>
+	new Valine({
+		el: '#vcomments',
+		appId: 'Ylc3X9BGqRA0PuhTGN13lBc0-gzGzoHsz',
+		appKey: '14D7JnNOKbQ5BoPycfGPkFQ8',
+		avatar: '',
+		pageSize: 10,
+		recordIp: false,
+		placeholder: '说点什么吧，来都来了',
+		visitor: false,
+	});
+</script>
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">记录美好，分享快乐</div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        <a href="https://space.bilibili.com/410879947" target="_blank">建筑G</a>
+    </div>
+    <div>
+        Theme <a href="https://github.com/imhanjie/gridea-theme-pure" target="_blank">Pure</a>, Powered by <a
+                href="https://gridea.dev" target="_blank">Gridea</a> | <a href="https://jianzhugo.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+</div>
+
+<script>
+  hljs.highlightAll()
+</script>
+
+    </div>
+</div>
+</body>
+</html>

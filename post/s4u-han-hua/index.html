@@ -1,0 +1,241 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>SketchUp插件汉化：S4U汉化简要教程 | 建筑G</title>
+
+<link rel="shortcut icon" href="https://jianzhugo.github.io/favicon.ico?v=1673337085128">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://jianzhugo.github.io/styles/main.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"> -->
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/9.12.0/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/9.12.0/languages//dart.min.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script> -->
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+    
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="/">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            建筑G
+        </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="changeNavbar">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+            <div class="nav-item">
+                
+                <a href="/" class="menu gt-a-link">
+                    首页
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/archives" class="menu gt-a-link">
+                    归档
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/tags" class="menu gt-a-link">
+                    标签
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/post/about" class="menu gt-a-link">
+                    关于
+                </a>
+                
+            </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1673337085128"
+                action="/search/">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+<script>
+    /* 移动端导航栏展开/收起切换 */
+    document.getElementById('changeNavbar').onclick = () => {
+        var element = document.getElementById('navbarSupportedContent');
+        if (element.style.display === 'none' || element.style.display === '') {
+            element.style.display = 'block';
+        } else {
+            element.style.display = 'none';
+        }
+    }
+</script>
+
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    SketchUp插件汉化：S4U汉化简要教程
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2022-11-08 ·
+                    </time>
+                    
+                        <a href="https://jianzhugo.github.io/tag/QbbebAw10/" class="post-tags">
+                            # 教程
+                        </a>
+                    
+                        <a href="https://jianzhugo.github.io/tag/RpEI1qZBq/" class="post-tags">
+                            # 原创汉化
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <p>SketchUp的插件，大部份都是很好汉化的，除非像Curic家庭的软件，把字符串放在加密的文件里（.rbe）。这篇文章将介绍一下其中中的代表，S4U插件。</p>
+<!-- more -->
+<h2 id="流程如下">流程如下</h2>
+<ol>
+<li><strong><a href="#%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6">安装插件</a></strong></li>
+<li><strong><a href="#%E6%9F%A5%E6%89%BE%E5%AD%97%E7%AC%A6">查找字符</a></strong></li>
+<li><strong><a href="#%E6%96%87%E4%BB%B6%E6%B1%89%E5%8C%96">文件汉化</a></strong></li>
+<li><strong><a href="#%E9%87%8D%E6%96%B0%E6%89%93%E5%8C%85">重新打包</a></strong></li>
+</ol>
+<h2 id="安装插件">安装插件</h2>
+<p>打开SU，菜单栏 &gt;扩展程序 &gt;扩展程序管理器，选择需要汉化的插件，安装它。<br>
+（不同的SU版本略有不同）</p>
+<p><em>这一步的目的是为了让插件解压出来，也为了查看插件的英文字符，才能进行下一步的查找。但要是熟悉的插件，也不一定要安装，可以直接解压插件（修改插件后缀，把.rbz改成.rar即可解压），找到保存字符串的文件，直接汉化即可。</em></p>
+<h2 id="查找字符">查找字符</h2>
+<p>打开刚才安装的插件目录（如：C:\Users\用户名\AppData\Roaming\SketchUp\SketchUp 2022\SketchUp\Plugins\s4u_align）</p>
+<p>打开Notepad ++软件（这款软件辱华，我实在找不到替换的软件，不得已使用它），打开查找对话框，如下图：<br>
+<img src="https://s2.loli.net/2022/11/15/KwAnxbdLzslBaJj.png" alt="2022-11-08_11-35-02.png" loading="lazy"></p>
+<p>在“目录”中填入刚才找到的插件目录地址，查找目标中填入需要汉化的英文字符。这一步的目地是为了找到需要汉化的字符具体在哪一个文件里。<br>
+其它选项按需选择，最后点全部查找即可。</p>
+<h2 id="文件汉化">文件汉化</h2>
+<p>经过上一步操作，可以确定字符在两个文件里面，分别是：<br>
+<mark>“s4u_align_code.rb”</mark> 和 <mark>“Resources”</mark> 文件夹里面的 <mark>“s4u_align.strings”</mark>。这里需要说明一下，一般插件汉化.rb文件里的字符即可，如下图所示：<br>
+<img src="https://s2.loli.net/2022/11/15/JOl1SifMhPctrp2.png" alt="2022-11-08_11-50-41.png" loading="lazy"></p>
+<p>这里推荐用Nodepad2打开，方便查看哪些字符是需要汉化的。</p>
+<p>而S4U插件因为是支持多国语言的，所以语言文件都放在了 <mark>“Resources”</mark> 文件夹里面。这里用Nodepad2打开 <mark>“s4u_align.strings”</mark> 文件，对里面字符进行汉化即可。</p>
+<p>当然手动一个个汉化是很费时费力的，我第一次就是手动汉化的，这里推荐第一次也用手动，这样可以避免翻译到不需要翻译的字符，产生错误。等有经验后可以借助软件来翻译，比如Passolo本地化软件。</p>
+<p>因为这款插件是支持多国语言的，所以在“Resources”文件夹里面放有不同国家的语言文件，我们需要新建一个文件夹“zh-CN”，把刚才汉化后的文件存入即可，如下图：<br>
+<img src="https://s2.loli.net/2022/11/15/DlUC9WsTjJVxvd5.png" alt="2022-11-08_11-58-15.png" style="zoom:150%;" /></p>
+<p>至此，插件就汉化完成了。可以打开SU查看一下有没有汉化出错和漏掉的。</p>
+<h2 id="重新打包">重新打包</h2>
+<p>如果要把汉化成果分享给别人，可以把汉化好的语言文件单独发给对方。但这有个问题就是，你还要告诉别人怎么替换，放在哪里，非常麻烦。就像我分享的汉化软件和插件，安装说明写的明明白白，还是很多人在问，怎么汉化，怎么安装 ，简直要把饭味到他口中才行。</p>
+<p>所以，我们要把原插件解包，就是<a href="#%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6">上面</a>有提到过的，把.rbz后缀改成.rar，打开rar 文件（不要解压出来，容易出错）把语言文件添加进相应文件夹，再把后缀改回来就可以了。</p>
+<p><strong>这里要注意一点，有些软件是替换掉原文件，有些是添加，这里就是添加。一定要理解内容，而不是按我说的怎么样就怎么样。出问题别找我。</strong></p>
+<blockquote>
+<p>早就想出这期教程了，因为实在简单，又觉得没必要写<br>
+但有些人像我当初一样，小白一个，想自己汉化给自己用<br>
+而且，这样，就不用汉化全套了，只汉化自己需要的插件就可以了<br>
+分享个原版，想要的自己看我这篇文章，自己汉化去。😂</p>
+</blockquote>
+
+                </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://jianzhugo.github.io/post/bei-wang-lu/" class="post-title gt-a-link">
+                    备忘录
+                </a>
+            </div>
+        
+
+        
+
+        
+
+        
+            <script src='https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
+
+<style>
+	div#vcomments{
+		width:100%;
+		max-width: 1000px;
+		padding: 2.5%
+	}
+</style>
+
+
+	<div id="vcomments"></div>
+
+<script>
+	new Valine({
+		el: '#vcomments',
+		appId: 'Ylc3X9BGqRA0PuhTGN13lBc0-gzGzoHsz',
+		appKey: '14D7JnNOKbQ5BoPycfGPkFQ8',
+		avatar: '',
+		pageSize: 10,
+		recordIp: false,
+		placeholder: '说点什么吧，来都来了',
+		visitor: false,
+	});
+</script>
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">记录美好，分享快乐</div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        <a href="https://space.bilibili.com/410879947" target="_blank">建筑G</a>
+    </div>
+    <div>
+        Theme <a href="https://github.com/imhanjie/gridea-theme-pure" target="_blank">Pure</a>, Powered by <a
+                href="https://gridea.dev" target="_blank">Gridea</a> | <a href="https://jianzhugo.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+</div>
+
+<script>
+  hljs.highlightAll()
+</script>
+
+    </div>
+</div>
+</body>
+</html>
